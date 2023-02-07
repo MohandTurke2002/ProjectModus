@@ -1,0 +1,32 @@
+@use "../Variables/variabls" as *;
+
+.clients {
+  padding: 100px 0;
+  background-color: $back-color;
+  p {
+    max-width: 750px;
+    text-align: center;
+    margin: 40px auto;
+    color: $para-color;
+    font-family: 'Crimson Text', serif;
+  }
+  span {
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+  }
+  .row {
+    margin-top: 150px;
+    div {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    row-gap: 60px;
+  }
+}

@@ -1,0 +1,85 @@
+@use "../Variables/variabls" as *;
+@use "../Global/global" as *;
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  top: 0;
+  .navbar-brand {
+    padding: 23px;
+    margin: 0;
+    img {
+      max-width: 53%;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: $alt-para-color;
+      padding: 35px 23px ;
+      font-size: 15px;
+      &:hover {
+        color: $color-sky;
+      }
+    }
+  }
+  form {
+    .btn {
+      color: $alt-para-color;
+      box-shadow: none !important;
+      &:hover {
+        color: $color-sky !important;
+      }
+    }
+    input {
+      border: none !important;
+      outline-color: $color-sky !important;
+      width: 0;
+      transition: 0.3s linear;
+    
+    }
+  }
+}
+
+@media (max-height: 400px) {
+  .nav-bar {
+    position: initial !important;
+  }
+  body {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    outline: none !important;
+    span {
+      color: $alt-para-color;
+      &:hover {
+        color: $color-sky !important;
+      }
+    }
+  }
+  .nav-item {
+    .nav-link {
+      padding: 20px 0px !important;
+      text-align: center;
+    }
+  }
+  .collapse {
+    display: block !important;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s linear;
+  }
+  form {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    max-width: 75% !important;
+  }
+}
+

@@ -1,0 +1,104 @@
+@use "../Variables/variabls" as *;
+
+.about-contact {
+  padding: 65px 0;
+  background-color: #101012;
+  .row {
+    justify-content: space-evenly;
+    .aboutus {
+      padding: 95px 92px 149px;
+      text-align: center;
+      border: 1px solid #707070;
+      h2 {
+        font-size: 25px;
+        color: white;
+        font-weight: 400;
+        &::after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 2px;
+          background-color: $color-sky;
+          margin: 40px auto 0;
+        }
+      }
+      p {
+        font-size: 15px;
+        margin-top: 45px;
+        color: white;
+        font-family: 'Crimson Text', serif;
+      }
+    }
+    .contactus {
+      padding: 95px 70px 76px;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid #707070;
+      h2 {
+        font-size: 25px;
+        color: white;
+        font-weight: 400;
+      }
+      .email {
+        display: block;
+        text-align: start;
+        color: white;
+        font-size: 15px;
+      }
+      #email {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #707070;
+        padding: 5px;
+        border-radius: 0;
+        color: white;
+        font-size: 15px;
+        transition: 0.3s linear;
+        &:focus {
+          border-bottom: 1px solid white;
+        }
+      }
+      .message {
+        display: block;
+        text-align: start;
+        color: white;
+        margin-top: 60px;
+        margin-bottom: 0;
+        font-size: 15px;
+      }
+      #message {
+        width: 100%;
+        background-color: transparent;
+        height: auto;
+        border: none;
+        resize: none;
+        outline: none;
+        color: white;
+        line-height: 50px;
+        background: linear-gradient(transparent 49px, #707070 1px);
+        background-size: 100% 50px;
+        background-repeat: repeat-y;
+        font-size: 15px;
+        &:focus {
+          background: linear-gradient(transparent 49px, #ffffff 1px);
+          background-size: 100% 50px;
+          background-repeat: repeat-y;
+        }
+      }
+      button {
+        width: auto;
+        margin: 40px 0 0 auto;
+        display: block;
+        border: none;
+        padding: 10px 0;
+        background-color: transparent;
+        color: $color-sky;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

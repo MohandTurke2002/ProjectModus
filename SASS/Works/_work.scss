@@ -1,0 +1,222 @@
+@use "../Variables/variabls" as *;
+
+.works {
+  padding: 150px 0;
+  .container {
+    p {
+      text-align: center;
+      max-width: 500px;
+      margin: 40px auto;
+      color: $para-color;
+      font-family: 'Crimson Text', serif;
+    }
+    .catogeri {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: 500;
+        li:hover {
+          color: $color-sky;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .gallery {
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    button {
+      border: none;
+      background-color: transparent;
+      outline: none;
+    }
+    .like {
+      width: 50%;
+      height: 50%;
+      background-color: #161718cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      transition: 0.3s linear;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      opacity: 0;
+      .border {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid $color-sky !important;
+        h5 {
+          font-size: 25px;
+          color: $color-sky;
+          font-weight: 300;
+        }
+        .addlike {
+          display: flex;
+          column-gap: 15px;
+          margin-top: 10px;
+          svg {
+            font-size: 20px;
+            color: white;
+            align-self: center;
+          }
+          p {
+            font-size: 20px;
+            color: white;
+            margin: 0;
+          }
+        }
+      }
+    }
+    img {
+      padding: 0 !important;
+    }
+    .app {
+      width: 30%;
+      height: 400px;
+      background-image: url("../../Images/works/works_01.jpg");
+      background-size: cover;
+      transition: 0.3s linear;
+      position: relative;
+      &:hover .like {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        transition: 0.3s linear;
+        padding: 20px;
+        opacity: 1;
+      }
+    }
+    .prog {
+      width: 100%;
+      height: 200px;
+      background-image: url("../../Images/works/works_02.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: 0.3s linear;
+      position: relative;
+      &:hover .like {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        padding: 20px;
+        transition: 0.3s linear;
+        opacity: 1;
+      }
+    }
+    .graph {
+      width: 40%;
+      height: 200px;
+      background-image: url("../../Images/works/works_03.jpg");
+      background-size: cover;
+      transition: 0.3s linear;
+      position: relative;
+      &:hover .like {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        transition: 0.3s linear;
+        padding: 20px;
+        opacity: 1;
+      }
+    }
+    .graph2 {
+      width: 60%;
+      height: 200px;
+      background-image: url("../../Images/works/works_04.jpg");
+      background-size: cover;
+      transition: 0.3s linear;
+      position: relative;
+      &:hover .like {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        transition: 0.3s linear;
+        padding: 20px;
+        opacity: 1;
+      }
+    }
+    .web {
+      width: 100%;
+      height: 200px;
+      background-image: url("../../Images/works/works_05.jpg");
+      background-size: cover;
+      transition: 0.3s linear;
+      position: relative;
+      &:hover .like {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        transition: 0.3s linear;
+        padding: 20px;
+        opacity: 1;
+      }
+    }
+    .photo {
+      width: 100%;
+      height: 200px;
+      background-image: url("../../Images/works/works_06.jpg");
+      background-size: cover;
+      transition: 0.3s linear;
+      position: relative;
+      &:hover .like {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        transition: 0.3s linear;
+        padding: 20px;
+        opacity: 1;
+      }
+    }
+    .crow {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+    }
+    .crow2 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+  }
+}
+.added {
+  color: $color-sky !important;
+}
+
+@media (max-width: 767px) {
+  .catogeri {
+    ul {
+      flex-direction: column;
+      text-align: center;
+      li {
+        padding: 10px 0;
+      }
+    }
+  }
+  .gallery {
+    flex-direction: column;
+    width: 100% !important;
+    .app,.prog,.web,.graph,.graph2,.photo {
+      width: 100% !important;
+    }
+    .crow {
+      width: 100% !important;
+    }
+    .crow2 {
+      flex-direction: column;
+      width: 100% !important;
+    }
+  }
+}

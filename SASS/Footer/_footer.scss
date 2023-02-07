@@ -1,0 +1,30 @@
+@use "../Variables/variabls" as *;
+
+.footer {
+  color: white;
+  background-color: $color-sky;
+  padding: 55px 0;
+  box-sizing: border-box;
+  p {
+    margin: 0;
+    font-size: 14px;
+    span {
+      color: #337ab7 !important;
+    }
+  }
+  .social {
+    text-align: end;
+    svg {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    text-align: center;
+  }
+  .social {
+    text-align: center !important;
+  }
+}
